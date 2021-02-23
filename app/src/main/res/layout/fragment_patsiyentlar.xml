@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#040239"
+    tools:context=".ui.patsiyentlar.FragmentPatients">
+
+    <EditText
+        android:id="@+id/ismingiz"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/kodingiz"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="32dp"
+        android:background="#FFFFFF"
+        android:hint="Ismingiz"
+        android:inputType="textPersonName"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/ism"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/kodingiz"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="10dp"
+        android:background="#040239"
+        android:backgroundTint="#040239"
+        android:text="Ism Familiya"
+        android:textAlignment="textEnd"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/tugilgankuningiz"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/kodingiz"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="80dp"
+        android:background="#FFFFFF"
+        android:hint="kun/oy/yil"
+        android:inputType="date|datetime"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/tugilgankun"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/kodingiz"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="10dp"
+        android:background="#040239"
+        android:backgroundTint="#040239"
+        android:text="Tug'ilgan vaqti"
+        android:textAlignment="textEnd"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/balandligingiz"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/kodingiz"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="128dp"
+        android:background="#FFFFFF"
+        android:hint="sm"
+        android:inputType="number"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/balandlik"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/kodingiz"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="10dp"
+        android:background="#040239"
+        android:backgroundTint="#040239"
+        android:text="Bo'yi"
+        android:textAlignment="textEnd"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/vazningiz"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="176dp"
+        android:background="#FFFFFF"
+        android:hint="kg"
+        android:inputType="number"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/vazni"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="176dp"
+        android:layout_marginEnd="10dp"
+        android:background="#040239"
+        android:backgroundTint="#040239"
+        android:text="Vazni"
+        android:textAlignment="textEnd"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/jinsingiz"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="224dp"
+        android:background="#FFFFFF"
+        android:hint="Erkak/Ayol"
+        android:inputType="text"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/jinsi"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="224dp"
+        android:layout_marginRight="10dp"
+        android:background="#040239"
+        android:backgroundTint="#040239"
+        android:text="Jinsi"
+        android:textAlignment="textEnd"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="300dp"
+        android:background="#E28A8C8C"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+    <Button
+        android:id="@+id/bekorqilish"
+        android:layout_width="190dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="305dp"
+        android:text="Bekor qilish" />
+    <Button
+        android:id="@+id/saqlash"
+        android:layout_width="190dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="305dp"
+        android:text="Saqlash" />
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="198dp"
+        android:layout_marginBottom="681dp"
+        android:ems="10"
+        android:inputType="date" />
+
+
+</RelativeLayout>

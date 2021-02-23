@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_yoriqnoma"
+            android:icon="@drawable/home"
+            android:title="@string/menu_yoriqnoma" />
+        <item
+            android:id="@+id/nav_arxiv"
+            android:icon="@drawable/arxiv"
+            android:title="@string/menu_arxiv" />
+        <item
+            android:id="@+id/nav_patsiyentlar"
+            android:icon="@drawable/patiyentlar"
+            android:title="@string/menu_patsiyentlar" />
+        <item
+            android:id="@+id/nav_tashxis"
+            android:icon="@drawable/tashxis"
+            android:title="@string/menu_tashxis" />
+        <item
+            android:id="@+id/nav_programmaHaqida"
+            android:icon="@drawable/book"
+            android:title="@string/menu_programmaHaqida" />
+        <item
+            android:id="@+id/nav_sozlamalar"
+            android:icon="@drawable/settings"
+            android:title="@string/menu_sozlamalar" />
+        <item
+            android:id="@+id/nav_chiqish"
+            android:icon="@drawable/exit"
+            android:title="@string/menu_chiqish" />
+
+    </group>
+</menu>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pat2"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color">
+
+    <com.scichart.examples.components.CustomDrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/drawer_layout_example"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment
+            android:id="@+id/fragment_id"
+            android:name="com.scichart.examples.fragments.showcase.vitalSignsMonitor.VitalSignsMonitorShowcaseFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:tag="example_fragment"/>
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="@dimen/sliding_menu_width"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:scrollbarThumbVertical="@android:color/transparent">
+
+            <LinearLayout
+                android:id="@+id/right_drawer"
+                android:layout_width="@dimen/sliding_menu_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:background="@android:color/transparent"
+                android:divider="@android:color/transparent"
+                android:orientation="vertical" />
+
+        </ScrollView>
+
+    </com.scichart.examples.components.CustomDrawerLayout>
+</LinearLayout>

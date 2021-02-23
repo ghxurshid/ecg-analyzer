@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_yoriqnoma">
+
+    <fragment
+        android:id="@+id/nav_patsiyentlar"
+        android:name="tutorials.android.mobileecg.ui.fragment.FragmentPatients"
+        android:label="@string/patsiyentlar"
+        tools:layout="@layout/fragment_patsiyentlar" />
+
+    <fragment
+        android:id="@+id/nav_arxiv"
+        android:name="tutorials.android.mobileecg.ui.fragment.FragmentArchive"
+        android:label="@string/arxiv"
+        tools:layout="@layout/fragment_arxiv" />
+
+    <fragment
+        android:id="@+id/nav_sozlamalar"
+        android:name="tutorials.android.mobileecg.ui.fragment.FragmentSettings"
+        android:label="@string/menu_sozlamalar"
+        tools:layout="@layout/fragment_sozlamalar" />
+
+    <fragment
+        android:id="@+id/nav_yoriqnoma"
+        android:name="tutorials.android.mobileecg.ui.fragment.FragmentInstruction"
+        android:label="@string/menu_yoriqnoma"
+        tools:layout="@layout/fragment_asosiy" />
+
+    <fragment
+        android:id="@+id/nav_chiqish"
+        android:name="tutorials.android.mobileecg.ui.fragment.FragmentExit"
+        android:label="@string/menu_chiqish"
+        tools:layout="@layout/fragment_chiqish" />
+
+</navigation>
